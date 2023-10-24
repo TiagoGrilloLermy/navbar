@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #010101;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 90px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo i {
+    color: #0aa5ff;
+    font-size: 22px;
+}
+
+.navbar .logo a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+
+.menu-links a {
+    color: #999999;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover {
+    color: #ffffff;
+}
+
+.form {
+    font-weight: 500;
+    padding: 12px 22px;
+    background: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+.form:hover {
+    background: #0aa5ff;
+    color: #ffffff;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: #ffffff;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+
+    .menu{
+        display: none;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    
+}
